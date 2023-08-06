@@ -21,11 +21,11 @@ module.exports = (sequelize, DataTypes) => {
     lastName: DataTypes.STRING,
     email: DataTypes.STRING,
     role: {
-      type: DataTypes.Enum,
+      type: DataTypes.ENUM,
       values: [
         'reviewer',
         'admin',
-      ]
+      ],
     },
     passwordDigest: DataTypes.STRING
   }, {
